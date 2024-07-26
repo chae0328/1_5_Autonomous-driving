@@ -18,3 +18,9 @@ ${ROOT}
 |   |   |   |   |-- crosswalk.py
 |   |   |   |   |-- lane_detect.py
 ```  
+
+### **시스템구성**
+* car_control
+* control_manager
+* crosswalk
+* lane_detect
