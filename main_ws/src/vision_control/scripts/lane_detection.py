@@ -20,7 +20,7 @@ from std_msgs.msg import String
 #publish_변수
 angle_pub = None
 object_pub = None
-#차선 최소 기울기 설정
+#차선이 검출될 기울기 임계값 설정
 min_slope = 0.4
 
 ##############################
