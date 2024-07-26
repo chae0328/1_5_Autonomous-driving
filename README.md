@@ -20,7 +20,7 @@ ${ROOT}
 ```  
 
 ### **시스템구성**
-**yolov5**<br/><br/>
+* **yolov5**<br/><br/>
   * 신호등에서 빨간불 신호면 정차, 파란불 들어오면 주행을 수행합니다.
    <br/>
   ![traffic](https://github.com/user-attachments/assets/3325e0f3-8c5d-4c82-a0a7-7be784703e73)
