@@ -25,7 +25,7 @@ ${ROOT}
 ![corner](https://github.com/user-attachments/assets/b60fbfa3-19ae-44d1-b356-1e43c62b72bb)
 ![corner_car](https://github.com/user-attachments/assets/e47474e8-4d9f-457a-be03-36fc9e5626a0)
 ![corner_car_2](https://github.com/user-attachments/assets/db806a82-9a8e-496d-b097-b1e1c86c8aa5)
-![crosswalk](https://github.com/user-attachments/assets/53ac2b06-0974-44d7-a949-90a870c90cf4)
+![crosswalk](https://github.com/user-attachments/assets/f1093519-4d46-4f67-a328-a6c900a713e1)
 ![crosswalk_car](https://github.com/user-attachments/assets/934a6ca3-5cdd-45b0-a8b3-636f9b35682c)
 * crosswalk
     
