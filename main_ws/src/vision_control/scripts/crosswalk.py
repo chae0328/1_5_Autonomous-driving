@@ -11,22 +11,19 @@ def process_frame(frame, pub):
     ####################################################
     # gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    # 가우시안 블러를 사용하여 노이즈를 줄입니다.
+    # 가우시안 블러를 사용하여 노이즈 감소
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
 
-    # 이진화를 사용하여 흰색 선을 강조합니다.
+    # 이진화를 사용하여 흰색 선 검출
     _, binary = cv2.threshold(blurred, 200, 255, cv2.THRESH_BINARY)
 
-    # 캐니 엣지 검출기를 사용하여 경계를 검출합니다.
+    # 캐니 엣지을 통한 경계 검출
     edges = cv2.Canny(binary, 200, 400)
 
-    # 경계를 확장하여 선을 더 두껍게 만듭니다.
+    # 경계선 확장 및 경계선 검출
     dilated = cv2.dilate(edges, None, iterations=2)
-
-    # 경계선을 찾습니다.
     contours, _ = cv2.findContours(dilated, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
 
-    # 횡단보도 특성: 여러 개의 평행한 직선으로 구성되어 있습니다.
     def is_crosswalk(contours):
         rects = [cv2.boundingRect(c) for c in contours if cv2.contourArea(c) > 500]
         rects = sorted(rects, key=lambda r: r[1])  # y 좌표 기준으로 정렬
@@ -42,13 +39,12 @@ def process_frame(frame, pub):
     cv2.line(frame, (0, frame.shape[0] - 50), (frame.shape[1], frame.shape[0] - 50), (255, 0, 0), 2)
     send = []
 
-    # 횡단보도를 검출하여 그립니다.
     for contour in contours:
-        if cv2.contourArea(contour) > 6000:  # 면적이 너무 작은 것은 무시합니다.
+        if cv2.contourArea(contour) > 6000:  # 면적 임계값
             rect = cv2.boundingRect(contour)
             x, y, w, h = rect
             aspect_ratio = w / h
-            if aspect_ratio > 5:  # 가로로 긴 형태를 찾습니다.
+            if aspect_ratio > 5:  # 가로로 긴 형태 검출
                 cv2.putText(frame, 'Crosswalk', (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
                 if y + h >= frame.shape[0] - 50: #and y + h <= frame.shape[0]:
                     cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 0, 255), 2)
@@ -69,11 +65,10 @@ def process_frame(frame, pub):
         return frame
 
 def main():
-    # ROS 노드를 초기화합니다.
+    # ROS 노드를 초기화
     rospy.init_node('crosswalk_detector', anonymous=True)
     pub = rospy.Publisher('/crosswalk', String, queue_size=5)
     
-    # 동영상 파일을 캡처 객체로 엽니다.
     #cap = cv2.VideoCapture('tinywow_IMG_1590_37023169.mp4')
     # ls /dev/video*
     cap = cv2.VideoCapture(4)
