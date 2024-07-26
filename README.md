@@ -22,6 +22,7 @@ ${ROOT}
 ### **시스템구성**
 * yolov5<br/><br/>
   ![traffic](https://github.com/user-attachments/assets/3325e0f3-8c5d-4c82-a0a7-7be784703e73)
+  ![up](https://github.com/user-attachments/assets/31a45dc7-18eb-40d6-99ba-eb056b66a686)
   <br/><br/>
 
 * lane_detection<br/><br/>
