@@ -36,7 +36,7 @@ ${ROOT}
   <br/><br/>
   
   ### rplidar_ros<br/>
-  * 장애물 감지를 위해 라이다 센서를 활용하였으며 일정거리 미만일 경우 정차되고, 이상일 경우 주행을 지속합니다.<br/>
+  * 장애물 감지를 위해 라이다 센서를 활용하였으며 일정거리 미만일 경우 정차하고, 이상일 경우 주행을 지속합니다.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![lidar_stop_car](https://github.com/user-attachments/assets/8afdf4c6-7ab2-4ce3-9058-aea1ad58eadf)
   ![lidar_stop](https://github.com/user-attachments/assets/8510b564-6831-4b4b-8025-5e3552905c56)
   <br/><br/>
