@@ -20,12 +20,12 @@ ${ROOT}
 ```  
 
 ### **시스템구성**
-* yolov5<br/><br/>
-  신호등에서 빨간불 신호면 정차, 파란불 들어오면 주행을 수행합니다.
+**yolov5**<br/><br/>
+  * 신호등에서 빨간불 신호면 정차, 파란불 들어오면 주행을 수행합니다.
    <br/>
   ![traffic](https://github.com/user-attachments/assets/3325e0f3-8c5d-4c82-a0a7-7be784703e73)
   <br/>
-  직진 화살표가 검출이되면 객체의 중심점을 따라 조향각을 계산합니다.
+  * 직진 화살표가 검출이되면 객체의 중심점을 따라 조향각을 계산합니다.
   <br/>
   ![up](https://github.com/user-attachments/assets/31a45dc7-18eb-40d6-99ba-eb056b66a686)
   <br/><br/>
