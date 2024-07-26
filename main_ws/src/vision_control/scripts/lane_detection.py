@@ -157,7 +157,7 @@ def draw_lines(frame, lines, line_color=(0, 255, 0), line_width=10):
 
 def ie(x1, y1, x2, y2, x3, y3): #교차점 판단 intersection_estimation
     """
-    세 점이 반시계 방향인지, 시계 방향인지, 혹은 일직선 상에 있는지 판단합니다.
+    세 점이 반시계 방향인지, 시계 방향인지, 혹은 일직선 상에 있는지 판단
     반환값:
         1: 반시계 방향
         -1: 시계 방향
@@ -203,7 +203,7 @@ def calculate_intersection_angle(x1, y1, x2, y2, x3, y3):
 
 def adjust_line_angle(frame, lane_lines, steering_ep):
     """
-    감지된 차선들에 기반하여 조향각을 조정합니다.
+    감지된 차선들에 기반하여 조향각을 조정
 
     매개변수:
         frame : 현재 프레임/이미지
