@@ -16,7 +16,7 @@ ${ROOT}
 |   |   |   |   |-- yolov5
 |   |   |   |   |-- control_manager.py
 |   |   |   |   |-- crosswalk.py
-|   |   |   |   |-- lane_detect.py
+|   |   |   |   |-- object_lane_detection.py
 ```  
 
 ### **시스템구성**
