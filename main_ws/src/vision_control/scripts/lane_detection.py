@@ -22,8 +22,12 @@ angle_pub = None
 object_pub = None
 #차선 최소 기울기 설정
 min_slope = 0.4
+
+##############################
 # 콘트라스트 및 밝기 조절  (1.0 ~ 3.0), (0, 100) 
 alpha,beta = 1.0, 0
+##############################
+
 Turn_Flag = False
 prev_turn_angle = 0
 max_angle = 20
