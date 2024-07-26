@@ -16,11 +16,11 @@ ${ROOT}
 |   |   |   |   |-- yolov5
 |   |   |   |   |-- control_manager.py
 |   |   |   |   |-- crosswalk.py
-|   |   |   |   |-- object_lane_detection.py
+|   |   |   |   |-- lane_detection.py
 ```  
 
 ### **시스템구성**
-* lane_detect<br/><br/>
+* lane_detection<br/><br/>
   영상을 HSV값으로 입력받아 차선 색상값을 기준으로 이진화를 수행합니다 이후 CannyEdge 검출을 하여 허프변환을 통해 차선을 검출하여 조향각을 계산합니다.<br/>
   ![corner](https://github.com/user-attachments/assets/b60fbfa3-19ae-44d1-b356-1e43c62b72bb)
   ![corner_car](https://github.com/user-attachments/assets/e47474e8-4d9f-457a-be03-36fc9e5626a0)
