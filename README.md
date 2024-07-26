@@ -42,7 +42,7 @@ ${ROOT}
   <br/><br/>
 
   ### crosswalk<br/>
-  * 영상을 이진화와 CannyEdge 수행하여 정지선을 검출합니다.<br/>
+  * 영상을 이진화와 CannyEdge 수행하여 정지선이 검출되면 일정시간 동안 정차되고, 전방에 사람이 없으면 주행이 지속됩니다.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![crosswalk_car](https://github.com/user-attachments/assets/934a6ca3-5cdd-45b0-a8b3-636f9b35682c)
   ![crosswalk](https://github.com/user-attachments/assets/351b5768-9822-40c2-b23f-ddae6693ef13)
   <br/><br/>
