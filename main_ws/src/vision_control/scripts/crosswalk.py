@@ -65,7 +65,6 @@ def process_frame(frame, pub):
         return frame
 
 def main():
-    # ROS 노드를 초기화
     rospy.init_node('crosswalk_detector', anonymous=True)
     pub = rospy.Publisher('/crosswalk', String, queue_size=5)
     
