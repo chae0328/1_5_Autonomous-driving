@@ -21,7 +21,7 @@ ${ROOT}
 
 ## **시스템 구성**
 ### yolov5<br/>
-  * 신호등에서 빨간불이면 정차되고, 파란불이면 주행이 지속됩니다.<br/>
+  * 신호등에서 빨간불이면 정차되고, 파란불이면 주행을 지속합니다.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![traffic](https://github.com/user-attachments/assets/3325e0f3-8c5d-4c82-a0a7-7be784703e73)<br/>
   * 검출된 직진 화살표의 중심점을 따라 조향각을 측정합니다.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![up](https://github.com/user-attachments/assets/31a45dc7-18eb-40d6-99ba-eb056b66a686)
@@ -36,7 +36,7 @@ ${ROOT}
   <br/><br/>
   
   ### rplidar_ros<br/>
-  * 장애물 감지를 위해 라이다 센서를 활용하였으며 일정거리 미만일 경우 정차되고, 이상일 경우 주행이 지속됩니다.<br/>
+  * 장애물 감지를 위해 라이다 센서를 활용하였으며 일정거리 미만일 경우 정차되고, 이상일 경우 주행을 지속합니다.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![lidar_stop_car](https://github.com/user-attachments/assets/8afdf4c6-7ab2-4ce3-9058-aea1ad58eadf)
   ![lidar_stop](https://github.com/user-attachments/assets/8510b564-6831-4b4b-8025-5e3552905c56)
   <br/><br/>
@@ -50,4 +50,4 @@ ${ROOT}
   ### control_manager<br/>
   * yolov5,lane_detection,rplidar_ros,crosswalk의 결과값을 입력받아 속도와 조향각을 결정합니다.<br/><br/>  
   ### car_control(Arduino)<br/>
-  * control_manager의 제어값을 통해 차량제어가 수행됩니다.
+  * control_manager의 제어값을 통해 차량제어을 수행합니다.
