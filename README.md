@@ -21,7 +21,7 @@ ${ROOT}
 
 ## **시스템 구성**
 ### yolov5<br/>
-  * 신호등에서 빨간불이면 정차, 파란불이면 주행을 지속합니다.<br/>
+  * 신호등에서 빨간불이면 정차, 파란불이면 주행을 지속됩니다.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![traffic](https://github.com/user-attachments/assets/3325e0f3-8c5d-4c82-a0a7-7be784703e73)<br/>
   * 검출된 직진 화살표의 중심점을 따라 조향각을 측정합니다.<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![up](https://github.com/user-attachments/assets/31a45dc7-18eb-40d6-99ba-eb056b66a686)
