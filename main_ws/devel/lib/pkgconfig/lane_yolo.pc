@@ -1,0 +1,8 @@
+prefix=/home/epcl/main_ws/devel
+
+Name: lane_yolo
+Description: Description of lane_yolo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

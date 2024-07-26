@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="vision_control" type="crosswalk.py" name="crosswalk_node" output="screen"/>
+  <node pkg="vision_control" type="control_manager.py" name="control_manager_node" output="screen"/>
+</launch>
+

@@ -1,0 +1,12 @@
+roslaunch rplidar_ros rplidar_a1.launch
+
+cv명령어를 친후 python3 lane_detect.py 
+roslaunch vision_control stopper.launch
+rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=57600
+
+#rosnode kill -a 노드 강제종료
+#sh start.shroslaunch rplidar_ros rplidar_a1.launch
+
+cv명령어를 친후 python3 lane_detect.py 
+roslaunch vision_control stopper.launch
+rosrun rosserial_python serial_node.py _port:=/dev/ttyACM0 _baud:=57600

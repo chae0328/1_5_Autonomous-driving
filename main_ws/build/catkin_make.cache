@@ -1,0 +1,2 @@
+rplidar_ros:vision_control
+-DCATKIN_DEVEL_PREFIX=/home/epcl/main_ws/devel -DCMAKE_INSTALL_PREFIX=/home/epcl/main_ws/install -G Unix Makefiles
