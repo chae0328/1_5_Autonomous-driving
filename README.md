@@ -36,7 +36,7 @@ ${ROOT}
   ![lidar_stop](https://github.com/user-attachments/assets/8510b564-6831-4b4b-8025-5e3552905c56)
   <br/><br/>
 
-* crosswalk<br/><br/>
+* crosswalk<br/>
   ![crosswalk_car](https://github.com/user-attachments/assets/934a6ca3-5cdd-45b0-a8b3-636f9b35682c)
   ![crosswalk](https://github.com/user-attachments/assets/351b5768-9822-40c2-b23f-ddae6693ef13)
   <br/><br/>
