@@ -49,5 +49,5 @@ ${ROOT}
 
   ### control_manager<br/>
   * yolov5,lane_detection,rplidar_ros,crosswalk의 결과값을 입력받아 속도와 조향각을 결정합니다.<br/><br/>  
-  ### car_control<br/>
+  ### car_control(Arduino)<br/>
   * control_manager의 제어값을 통해 차량제어가 수행됩니다.
