@@ -77,14 +77,12 @@ def main():
 
     while not rospy.is_shutdown():
         ret, frame = cap.read()
-
+        
         if not ret:
             break
-
+            
         processed_frame = process_frame(frame, pub)
-
         cv2.imshow('Detected Crosswalk', processed_frame)
-
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
