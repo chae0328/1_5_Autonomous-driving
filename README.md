@@ -21,9 +21,9 @@ ${ROOT}
 
 ## **시스템 구성**
 ### yolov5<br/>
-  * 신호등에서 빨간불이면 정차하고, 파란불이면 주행을 지속합니다.<br/>
+  * 신호등에서 빨간불이면 정차하고, 파란불이면 주행을 지속합니다.<br/><br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![traffic](https://github.com/user-attachments/assets/3325e0f3-8c5d-4c82-a0a7-7be784703e73)<br/>
-  * 검출된 직진 화살표의 중심점을 따라 조향각을 측정합니다.<br/>
+  * 검출된 직진 화살표의 중심점을 따라 조향각을 측정합니다.<br/><br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![up](https://github.com/user-attachments/assets/31a45dc7-18eb-40d6-99ba-eb056b66a686)
   <br/><br/>
 
@@ -36,13 +36,13 @@ ${ROOT}
   <br/><br/>
   
   ### rplidar_ros<br/>
-  * 장애물 감지를 위해 라이다 센서를 활용하였으며 일정거리 미만일 경우 정차하고, 이상일 경우 주행을 지속합니다.<br/>
+  * 장애물 감지를 위해 라이다 센서를 활용하였으며 일정거리 미만일 경우 정차하고, 이상일 경우 주행을 지속합니다.<br/><br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![lidar_stop_car](https://github.com/user-attachments/assets/8afdf4c6-7ab2-4ce3-9058-aea1ad58eadf)
   ![lidar_stop](https://github.com/user-attachments/assets/8510b564-6831-4b4b-8025-5e3552905c56)
   <br/><br/>
 
   ### crosswalk<br/>
-  * 영상 이진화와 CannyEdge를 수행하여 정지선을 검출하고 경계선(파란 직선)과 겹쳐지면 일정시간 동안 정차합니다. 이후 횡단보도에 사람이 없으면 주행을 지속합니다.<br/>
+  * 영상 이진화와 CannyEdge를 수행하여 정지선을 검출하고 경계선(파란 직선)과 겹쳐지면 일정시간 동안 정차합니다. 이후 횡단보도에 사람이 없으면 주행을 지속합니다.<br/><br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![crosswalk_car](https://github.com/user-attachments/assets/934a6ca3-5cdd-45b0-a8b3-636f9b35682c)
   ![crosswalk](https://github.com/user-attachments/assets/351b5768-9822-40c2-b23f-ddae6693ef13)
   <br/><br/>
