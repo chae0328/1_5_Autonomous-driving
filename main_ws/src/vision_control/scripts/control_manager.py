@@ -71,7 +71,7 @@ class Control:
             stop_time_difference = time.time() - stop_time
             rospy.loginfo(f"stop_time_difference: {stop_time_difference}")
             if stop_time_difference >= 3:
-                if stop_time_difference >= 10:
+                if stop_time_difference >= 6:
                     if traffic_flag == True and self.object_data == 'stop':
                         pub_msg.linear.x = 0.0
                         pub_msg.angular.z = self.angle_data 
@@ -92,7 +92,7 @@ class Control:
         if start_time != 0:
             start_time_difference = time.time() - start_time
             rospy.loginfo(f"start_time_difference: {start_time_difference}")
-            if start_time_difference >= 8:
+            if start_time_difference >= 10:
                 start_time = 0  # 초기화
             else:
                 pub_msg.linear.x = self.velocity
