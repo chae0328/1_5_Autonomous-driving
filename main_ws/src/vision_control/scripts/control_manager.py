@@ -71,7 +71,7 @@ class Control:
             stop_time_difference = time.time() - stop_time
             rospy.loginfo(f"stop_time_difference: {stop_time_difference}")
             if stop_time_difference >= 3:
-                if stop_time_difference >= 6:
+                if stop_time_difference >= 10:
                     if traffic_flag == True and self.object_data == 'stop':
                         pub_msg.linear.x = 0.0
                         pub_msg.angular.z = self.angle_data 
