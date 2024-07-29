@@ -300,7 +300,7 @@ def slope_to_angle(slope):
     degree = math.degrees(radian)
     return degree
 
-def draw_heading_line(frame, steering_angle, lane_lines, handle_color=(0, 0, 255), line_color=(0, 255, 0), line_width=8):
+def heading_line_control(frame, steering_angle, lane_lines, handle_color=(0, 0, 255), line_color=(0, 255, 0), line_width=8):
     global label_coordinate, Turn_Flag, prev_turn_angle
     height, width, _ = frame.shape
 
@@ -436,7 +436,7 @@ if __name__ == "__main__":
         draw_lines(frame, lane_lines)
         steering_angle = compute_steering_angle(frame, lane_lines)
         stabilized_steering_angle = stabilize_steering_angle(90, steering_angle, len(lane_lines))
-        draw_heading_line(frame, stabilized_steering_angle, lane_lines)
+        heading_line_control(frame, stabilized_steering_angle, lane_lines)
         
         cv2.imshow('Detected Lanes', frame)
     
