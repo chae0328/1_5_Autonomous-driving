@@ -18,11 +18,11 @@ ${ROOT}
 |   |   |   |   |-- crosswalk.py
 |   |   |   |   |-- lane_detection.py
 ```  
-## Introduction<br/>
+## Introduction
 * 2023년 교내 자율 주행 경진대회에서, 저는 허프 변환을 이용한 차선 인식으로 유아 전동차를 주행하는 시스템을 구현하였습니다.<br/><br/>
 * 2024년 교내 경진 경진대회에서 참가팀을 대상으로 자율 주행에 필요한 차량 제어, 컴퓨터비전, 인공지능 기술에 대한 멘토링을 진행하였습니다. 예를 들어 장애물 거리를 측정하기 위한 라이다 센서 활용 방법, 신호등과 횡단보도 인식, 조향 및 속도 제어 방법에 대해 지도하였습니다. 또한 콘트라스트 조정 및 연산 방법을 알려주어 날씨, 조명, 그림자에 따른 색상 인식 기반 차선 주행의 단점을 보완해주었습니다.<br/><br/>
   
-## **System configuration**
+## System configuration
 ### yolov5<br/>
   * 신호등에서 빨간불이면 정차하고, 파란불이면 주행을 지속합니다.<br/><br/>
   &nbsp;&nbsp;&nbsp;&nbsp;![traffic](https://github.com/user-attachments/assets/3325e0f3-8c5d-4c82-a0a7-7be784703e73)<br/>
