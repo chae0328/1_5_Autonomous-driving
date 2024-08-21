@@ -292,7 +292,6 @@ def calculate_up_angle(x1, y1, x2, y2, x3, y3):
         angle_degrees += 360
     return int(angle_degrees - 90)
 
-
 def slope_to_angle(slope):
     # 역탄젠트 함수로 라디안 값을 구합니다.
     radian = math.atan(slope)
